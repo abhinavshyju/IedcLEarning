@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spidy</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <a href="#" class="title">Spidy</a>
+        <ul class="nav-list">
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li class="cont-btn">Contact</li>
+        </ul>
+        <button class="show-btn" onclick="showList()">X</button>
+    </nav>
+    <section class="hero">
+       <div class="h-content">
+        <h1>Better Solutions For Your Business</h1>
+        <h4>We are team of talented designers making websites with IEDC</h4>
+        <a href="#" class="get-btn">Get Start</a>
+       </div>
+       <div class="h-img">
+        <img src="https://flyclipart.com/thumb2/explosion-gif-transparent-transparent-gif-sticker-741584.png" alt="">
+       </div>
+    </section>
+    <script>
+        const list = document.querySelector(".nav-list");
+        function showList(){
+            list.style.display=("block");
+            setTimeout(() => {
+                list.style.display=("none");
+            }, 5000);
+        }
+    </script>
+</body>
+</html>
